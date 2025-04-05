@@ -8,6 +8,22 @@ importers:
 
   .: {}
 
+  packages/chainlist-mcp:
+    dependencies:
+      fastmcp:
+        specifier: ^1.21.0
+        version: 1.21.0
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
+    devDependencies:
+      '@types/node':
+        specifier: ^22.13.17
+        version: 22.13.17
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.2
+
   packages/metamask-mcp:
     dependencies:
       '@kvs/memorystorage':
