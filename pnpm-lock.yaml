@@ -102,6 +102,28 @@ importers:
         specifier: ^5.8.2
         version: 5.8.2
 
+  packages/polygon-mcp:
+    dependencies:
+      abitype:
+        specifier: ^1.0.8
+        version: 1.0.8(typescript@5.8.2)(zod@3.24.2)
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.4.7
+      fastmcp:
+        specifier: ^1.21.0
+        version: 1.21.0
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
+    devDependencies:
+      '@types/node':
+        specifier: ^22.13.17
+        version: 22.13.17
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.2
+
   packages/solc-mcp:
     dependencies:
       fastmcp:
