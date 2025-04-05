@@ -32,11 +32,15 @@ export function registerCompileSolidityTools(server: FastMCP): void {
       const output = JSON.parse(solc.compile(JSON.stringify(input)));
       const result = []
 
-      for (var contractName in output.contracts[fileName]) {
+      for (const contractName in output.contracts[fileName]) {
+        const contract = output.contracts[fileName][contractName]
+        const metadata = JSON.parse(contract.metadata)
+
         result.push({
           contractName,
-          abi: output.contracts[fileName][contractName].abi,
-          bytecode: output.contracts[fileName][contractName].evm.bytecode.object,
+          abi: contract.abi,
+          bytecode: contract.evm.bytecode.object,
+          compilerVersion: metadata.compiler.version,
         })
       }
 

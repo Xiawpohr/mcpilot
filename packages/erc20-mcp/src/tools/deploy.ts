@@ -1,5 +1,5 @@
 import { FastMCP } from "fastmcp";
-import { encodeDeployData } from "viem";
+import { encodeAbiParameters, encodeDeployData } from "viem";
 import { z } from "zod";
 import erc20Abi from "../erc20-abi";
 
@@ -19,6 +19,9 @@ export function registerDeployTools(server: FastMCP): void {
       const symbol = args.symbol;
       const decimal = args.decimal;
 
+      const description = erc20Abi.find((x) => 'type' in x && x.type === 'constructor')
+      const constructorArguments = description ? encodeAbiParameters(description.inputs, [name, symbol, decimal]) : ""
+
       return {
         content: [
           {
@@ -28,6 +31,7 @@ export function registerDeployTools(server: FastMCP): void {
               abi: erc20Abi,
               args: [name, symbol, decimal],
               bytecode,
+              constructorArguments,
             })
           }
         ]
