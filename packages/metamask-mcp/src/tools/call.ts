@@ -11,7 +11,7 @@ export function registerCallTools(server: FastMCP): void {
     description: "Executing a new message call immediately without submitting a transaction to the network",
     parameters: z.object({
       to: z.string(),
-      value: z.coerce.number(),
+      value: z.coerce.number().optional(),
       data: z.string(),
     }),
     execute: async (args) => {

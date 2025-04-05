@@ -11,8 +11,8 @@ export function registerSendTransactionTools(server: FastMCP): void {
     description: "Send transactions to networks",
     parameters: z.object({
       to: z.string(),
-      value: z.coerce.number(),
-      data: z.string(),
+      value: z.coerce.number().optional(),
+      data: z.string().optional(),
     }),
     execute: async (args) => {
       try {

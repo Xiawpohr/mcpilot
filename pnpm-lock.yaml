@@ -24,6 +24,25 @@ importers:
         specifier: ^5.8.2
         version: 5.8.2
 
+  packages/erc20-mcp:
+    dependencies:
+      fastmcp:
+        specifier: ^1.21.0
+        version: 1.21.0
+      viem:
+        specifier: ^2.24.3
+        version: 2.24.3(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2)
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
+    devDependencies:
+      '@types/node':
+        specifier: ^22.13.17
+        version: 22.13.17
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.2
+
   packages/metamask-mcp:
     dependencies:
       '@kvs/memorystorage':

@@ -1,7 +1,7 @@
 {
-  "name": "solc-mcp",
+  "name": "erc20-mcp",
   "version": "1.0.0",
-  "description": "MCP for compiling solidity",
+  "description": "MCP for ERC20 token",
   "type": "module",
   "main": "./build/index.js",
   "bin": {
@@ -21,7 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "fastmcp": "^1.21.0",
-    "solc": "^0.8.29",
+    "viem": "^2.24.3",
     "zod": "^3.24.2"
   },
   "devDependencies": {
