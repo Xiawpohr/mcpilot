@@ -1,0 +1,12 @@
+{
+  "name": "onchain-mcp-kit",
+  "version": "1.0.0",
+  "description": "The mcp-kit for onchain usages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.14.2"
+}
