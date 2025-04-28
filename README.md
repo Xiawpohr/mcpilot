@@ -1,5 +1,8 @@
 # MCPilot
 
+> The project is made in ETHGlobal Hackathon Taipie 2025. The project is for proof of concept, and should not be used in production.
+> Please check out the [metamask-mcp](https://github.com/Xiawpohr/metamask-mcp) for production ready application.
+
 MCPilot provides a suite of MCP servers that empower LLMs to interact with blockchains through the MetaMask wallet—ensuring users never have to expose their private keys or risk losing their assets. It serves as an essential toolkit for connecting AI with blockchain technology, and also helps streamline user onboarding on chain.
 
 ## Description
