@@ -2,7 +2,7 @@ import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { normalize } from "viem/ens";
 import { getEnsAddress } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 
 export function registerGetENSAddressTools(server: FastMCP): void {
   server.addTool({

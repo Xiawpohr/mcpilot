@@ -1,5 +1,5 @@
 import { FastMCP } from "fastmcp";
-import { registerCompileSolidityTools } from "./tools";
+import { registerCompileSolidityTools } from "./tools/index.js";
 
 const server = new FastMCP({
   name: "Solidity compiler",

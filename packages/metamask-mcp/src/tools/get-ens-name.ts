@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { getEnsName} from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 import { type Address } from "viem";
 
 export function registerGetENSNameTools(server: FastMCP): void {

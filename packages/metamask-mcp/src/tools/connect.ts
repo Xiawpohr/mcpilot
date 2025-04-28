@@ -3,8 +3,8 @@ import { z } from "zod";
 import QRCode from "qrcode";
 import { connect } from "@wagmi/core"
 import { metaMask } from "@wagmi/connectors";
-import { wagmiConfig } from "../wagmi-config";
-import { JSONStringify } from "../utils/json-stringify";
+import { wagmiConfig } from "../wagmi-config.js";
+import { JSONStringify } from "../utils/json-stringify.js";
 
 export function registerConnectTools(server: FastMCP): void {
   server.addTool({

@@ -1,1 +1,1 @@
-export * from "./compile-solidity";
+export * from "./compile-solidity.js";

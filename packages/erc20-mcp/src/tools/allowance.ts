@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { Address, decodeFunctionResult, encodeFunctionData, formatUnits, Hex, parseUnits } from "viem";
 import { z } from "zod";
-import erc20Abi from "../erc20-abi";
+import erc20Abi from "../erc20-abi.js";
 
 export function registerAllowanceTools(server: FastMCP): void {
   server.addTool({

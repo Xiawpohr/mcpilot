@@ -1,9 +1,9 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { deployContract } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 import { Abi, Address, Hex, TransactionExecutionError } from "viem";
-import { JSONStringify } from "../utils/json-stringify";
+import { JSONStringify } from "../utils/json-stringify.js";
 
 export function registerDeployContractTools(server: FastMCP): void {
   server.addTool({

@@ -1,9 +1,9 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { getToken } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 import { Address } from "viem";
-import { JSONStringify } from "../utils/json-stringify";
+import { JSONStringify } from "../utils/json-stringify.js";
 
 export function registerGetTokenTools(server: FastMCP): void {
   server.addTool({

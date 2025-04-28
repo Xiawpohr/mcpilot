@@ -6,8 +6,8 @@ import {
   registerMintTools,
   registerTotalSupplyTools,
   registerTransferTools,
-} from "./tools";
-import { registerGenerateERC20ContractPrompt } from "./prompts";
+} from "./tools/index.js";
+import { registerGenerateERC20ContractPrompt } from "./prompts/index.js";
 
 const server = new FastMCP({
   name: "Chainlist",

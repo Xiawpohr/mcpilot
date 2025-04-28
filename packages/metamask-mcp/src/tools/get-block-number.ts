@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { getBlockNumber } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 
 export function registerGetBlockNumberTools(server: FastMCP): void {
   server.addTool({

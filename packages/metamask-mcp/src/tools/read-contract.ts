@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { readContract } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
+import { wagmiConfig } from "../wagmi-config.js";
 import { Abi, Address, TransactionExecutionError } from "viem";
 
 export function registerReadContractTools(server: FastMCP): void {

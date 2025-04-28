@@ -1,1 +1,1 @@
-export * from "./be-metamask-assistant";
+export * from "./be-metamask-assistant.js";

@@ -13,8 +13,7 @@ Follow the below steps to guide user to connect a wallet:
 1. Check wallet connection. Skip the followig steps if a wallet is connected.
 2. Get the connect URI.
 3. Show the QR code of the connect URI, and tell user to scan the QR code.
-4. Wait 5 seconds.
-5. Check wallet connection again. Remind user to scan the QR code if a wallet is still not connected.
+
 
 Follow the below steps to guide user to send a transaction:
 1. Prepare a transaction if you can.

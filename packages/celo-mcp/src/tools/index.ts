@@ -1,1 +1,1 @@
-export * from "./verify-contract"
+export * from "./verify-contract.js"

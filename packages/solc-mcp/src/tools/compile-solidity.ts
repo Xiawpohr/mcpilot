@@ -1,6 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import solc from "solc";
+// const solc = require("solc")
 
 export function registerCompileSolidityTools(server: FastMCP): void {
   server.addTool({

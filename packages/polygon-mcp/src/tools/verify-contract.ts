@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
-import { EtherscanVerifier } from "../utils/EtherscanVerifier";
-import env from "../env";
+import { EtherscanVerifier } from "../utils/EtherscanVerifier.js";
+import env from "../env.js";
 
 export function registerVerifyContractTools(server: FastMCP): void {
   server.addTool({

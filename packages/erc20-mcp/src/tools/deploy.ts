@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
-import { encodeAbiParameters, encodeDeployData } from "viem";
+import { encodeAbiParameters } from "viem";
 import { z } from "zod";
-import erc20Abi from "../erc20-abi";
+import erc20Abi from "../erc20-abi.js";
 
 export function registerDeployTools(server: FastMCP): void {
   server.addTool({

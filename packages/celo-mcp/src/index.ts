@@ -1,5 +1,5 @@
 import { FastMCP } from "fastmcp";
-import { registerVerifyContractTools } from "./tools";
+import { registerVerifyContractTools } from "./tools/index.js";
 
 const server = new FastMCP({
   name: "Celo",

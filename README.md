@@ -83,14 +83,20 @@ Follow the guide https://modelcontextprotocol.io/quickstart/user and add the fol
       "args": [
         "tsx",
         "/PATH/TO/YOUR_PROJECT/packages/polygon-mcp/src/index.ts"
-      ]
+      ],
+      "env": {
+        "POLYGONSCAN_API_KEY": ""
+      }
     },
     "celo-server": {
       "command": "npx",
       "args": [
         "tsx",
         "/PATH/TO/YOUR_PROJECT/packages/celo-mcp/src/index.ts"
-      ]
+      ],
+      "env": {
+        "CELOSCAN_API_KEY": ""
+      }
     },
     "zircuit-server": {
       "command": "npx",

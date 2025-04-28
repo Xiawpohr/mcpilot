@@ -23,8 +23,8 @@ import {
   registerWaitForTransactionReceiptTools,
   registerWaitSecondsTools,
   registerWriteContractTools,
-} from './tools';
-import { registerBeMetaMaskAssistantPrompt } from "./prompts";
+} from './tools/index.js';
+import { registerBeMetaMaskAssistantPrompt } from "./prompts/index.js";
 
 
 const server = new FastMCP({

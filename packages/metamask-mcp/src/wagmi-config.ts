@@ -1,5 +1,5 @@
 import { http, createConfig, createStorage } from "@wagmi/core";
-import { mainnet, sepolia } from "@wagmi/core/chains";
+import { celoAlfajores, mainnet, polygonAmoy, sepolia, zircuitGarfieldTestnet } from "@wagmi/core/chains";
 import { kvsMemoryStorage } from "@kvs/memorystorage";
 
 const kvsStorage = await kvsMemoryStorage({
@@ -21,11 +21,14 @@ const storage = {
 }
 
 export const wagmiConfig = createConfig({
-  chains: [mainnet, sepolia],
+  chains: [mainnet, sepolia, polygonAmoy, celoAlfajores, zircuitGarfieldTestnet],
   ssr: true,
   storage: createStorage({ storage }), 
   transports: {
     [mainnet.id]: http(),
     [sepolia.id]: http(),
+    [polygonAmoy.id]: http(),
+    [celoAlfajores.id]: http(),
+    [zircuitGarfieldTestnet.id]: http(),
   },
 });

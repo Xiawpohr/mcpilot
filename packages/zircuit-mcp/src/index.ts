@@ -1,5 +1,5 @@
 import { FastMCP } from "fastmcp";
-import { registerTokenlistTools } from "./tools";
+import { registerTokenlistTools } from "./tools/index.js";
 
 const server = new FastMCP({
   name: "Chainlist",

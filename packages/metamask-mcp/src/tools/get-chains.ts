@@ -1,8 +1,8 @@
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { getChains } from "@wagmi/core"
-import { wagmiConfig } from "../wagmi-config";
-import { JSONStringify } from "../utils/json-stringify";
+import { wagmiConfig } from "../wagmi-config.js";
+import { JSONStringify } from "../utils/json-stringify.js";
 
 export function registerGetChainsTools(server: FastMCP): void {
   server.addTool({
